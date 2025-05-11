@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMHomeFood</title>
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left"><strong>SMHomeFood</strong></div>
+    <div class="nav-center">
+      <a href="index.html">Home</a>
+      <a href="#">Menu</a>
+    </div>
+    <a class="login-button" href="login.html">Login</a>
+  </nav>
+
+  <header>
+    <h1>Welcome to SMHomeFood</h1>
+    <p>Authentic home-cooked delights delivered to your door</p>
+  </header>
+
+  <section>
+    <h2>Our Specialties</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Boondhi Laddu</h3>
+        <p>₹300</p>
+        <button onclick="addToCart('Boondhi Laddu', 300)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Garelu</h3>
+        <p>₹240</p>
+        <button onclick="addToCart('Garelu', 240)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Murukulu</h3>
+        <p>₹250</p>
+        <button onclick="addToCart('Murukulu', 250)">Add to Cart</button>
+      </div>
+    </div>
+    <a href="cart.html" class="view-cart">View Cart</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<script src="script.js"></script>

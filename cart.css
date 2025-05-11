@@ -1,0 +1,173 @@
+/* General body and layout styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-center a, .login-button {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.login-button {
+  background: #ff7a00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* Cart section */
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.cart-item {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Cart item information */
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.item-number {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.item-info h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.item-info p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+.item-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item-actions button {
+  background: #ff7a00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-actions button:hover {
+  background: #ff5f00;
+}
+
+/* Checkout Button Styling */
+.checkout-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #4caf50;
+  color: white;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.checkout-button:hover {
+  background: #45a049;
+  transform: translateY(-2px); /* Subtle floating effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adding shadow for hover effect */
+}
+
+/* Cart Summary Styling */
+.cart-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .item-actions {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .checkout-button {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .cart-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-number {
+    font-size: 0.9rem;
+  }
+
+  .item-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .item-info p {
+    font-size: 0.9rem;
+  }
+}
